@@ -7,15 +7,10 @@ export default function App() {
   const [item, setItem] = useState("");
   const [items, setItems] = useState([]);
 
-  console.log("item state:" + item);
-  console.log(items);
-
   const handleChange = () => {
     setItems([...items, item]);
     setItem("");
   }
-  console.log("item state:" + item);
-  console.log(items);
 
   return (
     <View style={styles.container}>
